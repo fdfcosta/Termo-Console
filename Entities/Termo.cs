@@ -123,8 +123,12 @@ Como jogar?
     Você terá 6 tentativas para encontrar a palavra secreta.
     A cada tentativa, as cores mostram o quão perto você está da solução.
     
-    Letras em azul fazem parte da palavra secreta e estão na posição correta
-    Letras em magenta fazem parte da palavra secreta, mas não estão na posição correta.
+    - Letras em azul fazem parte da palavra secreta e estão na posição correta
+    - Letras em magenta fazem parte da palavra secreta, mas não estão na posição correta
+    - Letras que não possuírem cor não poderão ser utilizadas novamente
+
+    As letras que estiverem disponíveis estarão no alfabeto abaixo
+
     
 
 ");
@@ -141,7 +145,7 @@ Como jogar?
 
         private void ImprimeAlfabeto()
         {
-            Console.WriteLine("ALFABETO RESTANTE:");
+            Console.WriteLine("LETRAS DISPONÍVEIS:");
             foreach (var i in Alfabeto)
             {
                 if (!LetrasDescartadas.Contains(i))
