@@ -1,0 +1,15 @@
+C:\Users\User\repos\projetos\TermoConsole\bin\Debug\net6.0\TermoConsole.exe
+C:\Users\User\repos\projetos\TermoConsole\bin\Debug\net6.0\TermoConsole.deps.json
+C:\Users\User\repos\projetos\TermoConsole\bin\Debug\net6.0\TermoConsole.runtimeconfig.json
+C:\Users\User\repos\projetos\TermoConsole\bin\Debug\net6.0\TermoConsole.dll
+C:\Users\User\repos\projetos\TermoConsole\bin\Debug\net6.0\TermoConsole.pdb
+C:\Users\User\repos\projetos\TermoConsole\obj\Debug\net6.0\TermoConsole.csproj.AssemblyReference.cache
+C:\Users\User\repos\projetos\TermoConsole\obj\Debug\net6.0\TermoConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\repos\projetos\TermoConsole\obj\Debug\net6.0\TermoConsole.AssemblyInfoInputs.cache
+C:\Users\User\repos\projetos\TermoConsole\obj\Debug\net6.0\TermoConsole.AssemblyInfo.cs
+C:\Users\User\repos\projetos\TermoConsole\obj\Debug\net6.0\TermoConsole.csproj.CoreCompileInputs.cache
+C:\Users\User\repos\projetos\TermoConsole\obj\Debug\net6.0\TermoConsole.dll
+C:\Users\User\repos\projetos\TermoConsole\obj\Debug\net6.0\refint\TermoConsole.dll
+C:\Users\User\repos\projetos\TermoConsole\obj\Debug\net6.0\TermoConsole.pdb
+C:\Users\User\repos\projetos\TermoConsole\obj\Debug\net6.0\TermoConsole.genruntimeconfig.cache
+C:\Users\User\repos\projetos\TermoConsole\obj\Debug\net6.0\ref\TermoConsole.dll
