@@ -18,25 +18,17 @@ namespace TermoConsole.Entities
         public void Partida()
         {
             GeraLista();
-
             PalavraSorteada = DefinePalavraSorteada();
-
-
 
             while (Tentativas < 6)
             {
 
                 ImprimeMenu();
-
-                Console.WriteLine(PalavraSorteada);
-
                 ListaJogadas();
 
 
                 string palavraTestada = DefinePalavraTestada();
-
                 PalavrasTestadas.Add(palavraTestada); 
-
                 Jogada(PalavraSorteada, palavraTestada);
 
                 Tentativas++;
@@ -64,7 +56,6 @@ namespace TermoConsole.Entities
 
                 Console.WriteLine($"Parabéns! Você acertou a palavra secreta: {PalavraSorteada}");
             }
-
             else
             {
                 Console.Clear();
@@ -75,10 +66,11 @@ namespace TermoConsole.Entities
                 Console.WriteLine();
 
                 Console.WriteLine("Você esgotou o número de tentativas. Por favor, tente novamente.");
-                Console.WriteLine($"A palavara secreta era: {PalavraSorteada}");
+                Console.WriteLine($"A palavra secreta era: {PalavraSorteada}");
                 Console.ReadKey();
             }
         }
+
         private void GeraLista()
         {
             string sourcePath = @"C:\Users\User\repos\projetos\TermoConsole\palavras.txt";
@@ -120,6 +112,7 @@ namespace TermoConsole.Entities
             }
 
         }
+
         private void ImprimeMenu()
         {
 
@@ -145,6 +138,7 @@ Como jogar?
 ");
 
         }
+
         private void ImprimeAlfabeto()
         {
             Console.WriteLine("ALFABETO RESTANTE:");
@@ -177,6 +171,7 @@ Como jogar?
                 }
             }
         }
+
         public void Jogada(string palavraSorteada, string palavraTestada)
         {
 
@@ -269,12 +264,14 @@ Como jogar?
 
 
         }
+
         private string DefinePalavraSorteada()
         {
             string palavraSorteada = ListaPalavras[new Random().Next(ListaPalavras.Count)];
 
             return palavraSorteada;
         }
+
         private string DefinePalavraTestada()
         {
 
@@ -310,6 +307,7 @@ Como jogar?
 
             return palavraTestada.ToUpper();
         }
+
         public bool VerificaPalavraTestada(string palavra)
         {
             bool PossuiDigitoOuNumero = false;
@@ -360,6 +358,7 @@ Como jogar?
 
 
         }
+
         private bool VerificarJogada(string palavraSorteada, string palavraTestada)
         {
             if (palavraSorteada == palavraTestada)
