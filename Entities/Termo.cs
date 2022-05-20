@@ -20,6 +20,8 @@ namespace TermoConsole.Entities
             GeraLista();
             PalavraSorteada = DefinePalavraSorteada();
 
+            Console.WriteLine(PalavraSorteada);
+
             while (Tentativas < 6)
             {
 
@@ -48,22 +50,13 @@ namespace TermoConsole.Entities
 
             if (Venceu == true)
             {
-                Console.Clear();
-
-                ImprimeMenu();
-
-                ListaJogadas();
+                ReiniciaTela();
 
                 Console.WriteLine($"Parabéns! Você acertou a palavra secreta: {PalavraSorteada}");
             }
             else
             {
-                Console.Clear();
-
-                ImprimeMenu();
-                ListaJogadas();
-
-                Console.WriteLine();
+                ReiniciaTela();
 
                 Console.WriteLine("Você esgotou o número de tentativas. Por favor, tente novamente.");
                 Console.WriteLine($"A palavra secreta era: {PalavraSorteada}");
@@ -340,21 +333,25 @@ Como jogar?
             }
             else if (PossuiDigitoOuNumero)
             {
+                ReiniciaTela();
                 Console.WriteLine("Erro. Todos os caracteres precisam ser letras e não possuir acento.");
                 return false;
             }
             else if (LetraJaUtilizada)
             {
+                ReiniciaTela();
                 Console.WriteLine("A palavra utilizada possui letra(s) já utilizada(s). Verifique o alfabeto acima e insira uma palavras com as letras disponíveis.");
                 return false;
             }
             else if (!PalavraExistente)
             {
+                ReiniciaTela();
                 Console.WriteLine("Esta palavra não é aceita.");
                 return false;
             }
             else
             {
+                ReiniciaTela();
                 Console.WriteLine("Palavra deve ter 5 caracteres.");
                 return false;
             }
@@ -375,6 +372,13 @@ Como jogar?
                 return false;
             }
 
+        }
+
+        private void ReiniciaTela()
+        {
+            Console.Clear();
+            ImprimeMenu();
+            ListaJogadas();
         }
 
     }
