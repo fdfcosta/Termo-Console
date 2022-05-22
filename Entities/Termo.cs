@@ -143,20 +143,20 @@ Como jogar?
             {
                 if (!LetrasDescartadas.Contains(i))
                 {
-                    if (LetrasNaPalavra.Contains(i))
-                    {
 
-                        Console.BackgroundColor = ConsoleColor.DarkMagenta;
+
+                    if (LetrasNaPosicao.Contains(i))
+                    {
+                        FundoLetraNaPosicao();
                         Console.Write($"{i}");
-                        Console.BackgroundColor = ConsoleColor.Black;
+                        FundoLetraPadrao();
                         Console.Write(" ");
-
                     }
-                    else if (LetrasNaPosicao.Contains(i))
+                    else if (LetrasNaPalavra.Contains(i))
                     {
-                        Console.BackgroundColor = ConsoleColor.DarkBlue;
+                        FundoLetraNaPalavra();
                         Console.Write($"{i}");
-                        Console.BackgroundColor = ConsoleColor.Black;
+                        FundoLetraPadrao();
                         Console.Write(" ");
                     }
                     else
@@ -381,6 +381,20 @@ Como jogar?
             ListaJogadas();
         }
 
+        private void FundoLetraNaPalavra()
+        {
+            Console.BackgroundColor = ConsoleColor.DarkMagenta;
+        }
+        
+        private void FundoLetraNaPosicao()
+        {
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+        }
+
+        private void FundoLetraPadrao()
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+        }
     }
 
 }
