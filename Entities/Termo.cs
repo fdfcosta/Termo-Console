@@ -20,7 +20,6 @@ namespace TermoConsole.Entities
             GeraLista();
             PalavraSorteada = DefinePalavraSorteada();
 
-            Console.WriteLine(PalavraSorteada);
 
             while (Tentativas < 6)
             {
